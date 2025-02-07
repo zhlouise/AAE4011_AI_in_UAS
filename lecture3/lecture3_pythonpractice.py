@@ -1,3 +1,5 @@
+import numpy as np
+
 # Check range exercise
 def check_range(x):
     if x >= 100:
@@ -42,9 +44,23 @@ def name_frequency():
     print('Name Frequencies: '+str(name_count))
     print('The most frequent name is: '+max(name_count, key=name_count.get))
 
+# Find inverse of 4 linear functions exercise
+def inverse_function():
+    # Construct the matrix
+    A = np.array([[1, 2, 3, 4],
+                  [5, 6, 7, 8],
+                  [9, 10, 11, 12],
+                  [13, 14, 15, 16]])
+
+    # Calculate the inverse of the matrix
+    A_inv = np.linalg.inv(A)
+
+    print(A_inv)
+
 # Checking
 check_range(75)
 sum_100()
 print(quadratic_fun(2.6))
 find_min()
 name_frequency()
+inverse_function()
