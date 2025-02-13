@@ -7,8 +7,8 @@ from scipy.spatial.transform import Rotation as R
 # file_path1 = '//wsl.localhost/Ubuntu-20.04/home/wws/ws_VIW-Fusion/src/output/Solution1.csv'  # Replace with your first CSV file path
 # file_path2 = '//wsl.localhost/Ubuntu-20.04/home/wws/ws_VIW-Fusion/src/output/Solution2.csv'  # Replace with your second CSV file path
 
-file_path1 = '/home/zh_louise/AAE4011_AI_in_UAS/lecture3/Solution1.csv'  # Replace with your first CSV file path
-file_path2 = '/home/zh_louise/AAE4011_AI_in_UAS/lecture3/Solution2.csv'  # Replace with your second CSV file path
+file_path1 = 'D:\AAE4011_AI_in_UAS\lecture3\Solution1.csv'  # Replace with your first CSV file path
+file_path2 = 'D:\AAE4011_AI_in_UAS\lecture3\Solution2.csv'  # Replace with your second CSV file path
 
 data1 = pd.read_csv(file_path1)
 data2 = pd.read_csv(file_path2)
@@ -45,7 +45,7 @@ fig, axs = plt.subplots(2, 2, figsize=(15, 10))
 
 # First subplot
 axs[0, 0].plot(pos1['PosX'], pos1['PosY'], marker='', linestyle='-', color='r',label='Baseline')
-# axs[0, 0].plot(pos2['PosX'], pos2['PosY'], marker='', linestyle='-', color='b',label='Proposed')
+axs[0, 0].plot(pos2['PosX'], pos2['PosY'], marker='', linestyle='-', color='b',label='Proposed')
 axs[0, 0].set_title('Trajectory (X-Y)')
 axs[0, 0].set_xlabel('X direction')
 axs[0, 0].set_ylabel('Y direction')
