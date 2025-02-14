@@ -1,7 +1,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
-from scipy.spatial.transform import Rotation as R
 
 file_path1 = '/home/zh_louise/AAE4011_AI_in_UAS/lecture4/Solution1.csv'  # Replace with your first CSV file path
 file_path2 = '/home/zh_louise/AAE4011_AI_in_UAS/lecture4/Solution2.csv'  # Replace with your second CSV file path
